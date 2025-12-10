@@ -45,4 +45,13 @@
   <body class="antialiased selection:bg-emerald-100 selection:text-emerald-900 transition-colors duration-300">
     <div id="root"></div>
   </body>
+  <script type="module">
+  import React from "react"
+  import ReactDOM from "react-dom/client"
+  import App from "./App.tsx"
+
+  ReactDOM.createRoot(document.getElementById("root")).render(
+    React.createElement(App)
+  )
+</script>
 </html>
