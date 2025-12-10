@@ -11,6 +11,7 @@ export interface StudentProfile {
   stressLevel: number; // 1-10
   freeTimePerDay: number; // Hours
   courses: Course[];
+  currentDate?: string; // Format: YYYY-MM-DD or readable string
 }
 
 export enum TaskType {
@@ -39,4 +40,18 @@ export interface AIAnalysisResult {
   overallAnalysis: string;
   recommendations: string[];
   highPressureDays: string[];
+}
+
+export type ThemeMode = 'light' | 'dark';
+export type ThemeColor = 'emerald' | 'blue' | 'rose' | 'violet' | 'amber';
+
+export interface ThemeConfig {
+  name: string;
+  primary: string;
+  hover: string;
+  text: string;
+  bgLight: string;
+  border: string;
+  ring: string;
+  gradient: string;
 }
